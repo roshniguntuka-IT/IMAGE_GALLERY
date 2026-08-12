@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+    <p class="hero-tag">DISCOVER • SAVE • INSPIRE</p>
+
+    <h1>Your world of<br>visual inspiration.</h1>
+
+    <p class="hero-description">
+        Explore beautiful images, save your favorites,
+        and discover something new every day.
+    </p>
+    </header>
+    <main>
+        <section class="gallery-section">
+
+            <div class="gallery-top">
+                
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search images...">
+                
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="nature">Nature</button>
+                <button class="filter-btn" data-category="people">People</button>
+                <button class="filter-btn" data-category="animals">Animals</button>
+                <button class="filter-btn" data-category="city">City</button>
+            </div>
+
+            <div class="gallery" id="gallery"></div>
+
+        </section>
+    </main>
+
+    <div class="modal" id="modal">
+
+        <button class="close-btn" id="closeBtn">&times;</button>
+
+        <button class="previous-btn" id="previousBtn">
+            &#10094;
+        </button>
+
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+            <h3 id="modalTitle"></h3>
+        </div>
+
+        <button class="next-btn" id="nextBtn">
+            &#10095;
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
